@@ -16,9 +16,10 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import edu.ITSchool.abitpro.theme.White
 
-@Preview
 @Composable
-fun Helloscreen() {
+fun HelloScreen(
+    onSearchClick: () -> Unit
+) {
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -27,7 +28,7 @@ fun Helloscreen() {
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(
-            text = "Приложение готово к работе.\n" +
+            text = "Приложение готово к работе.\n" +        //todo вынести в стрингу
                     "Остался финальный этап - настройка\n" +
                     "фильтров для выдачи подходящих\n" +
                     "Вам вузов. Рекомендуем указывать\n" +
@@ -44,26 +45,21 @@ fun Helloscreen() {
             fontWeight = FontWeight.Bold,
         )
         Button(
-            OnClick = { onNavigateToSearch() },
+            OnClick = { onNavigateToSearch: () -> Unit },
             modifier = Modifier.fillMaxSize(0.8f),
             shape = MaterialTheme.shapes.medium
         ) {
             Text(text = "Начать поиск")
         }
     }
-
-//    Scaffold(
-//
-//    ) { }
-
-
 }
+
 
 //@Preview(showBackground = true)
 @Composable
 fun ShowHello() {
     MaterialTheme {
-        Helloscreen()
+//вот тут можно проверить превью
     }
 }
 

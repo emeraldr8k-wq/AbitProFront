@@ -27,9 +27,8 @@ fun ContextMenu(
         }, colors = TextFieldDefaults.colors(
 
             focusedTextColor = Black,
-
+//todo написать адекватно
             unfocusedTextColor = Black,
-
             disabledTextColor = Black,
             focusedContainerColor = Color.Transparent,
             unfocusedContainerColor = Color.Transparent,

@@ -3,8 +3,8 @@ package edu.ITSchool.abitpro.screens
 import androidx.compose.runtime.Composable
 
 @Composable
-fun SearchScreen(
-    on_Click: () ->  Unit = {} //Todo
+fun AccountScreen(
+    onFavoritesClick: () ->  Unit = {}
 )
 {
 
