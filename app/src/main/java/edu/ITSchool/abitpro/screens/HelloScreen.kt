@@ -14,7 +14,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import edu.ITSchool.abitpro.theme.White
+import edu.ITSchool.abitpro.theme.LWhite1
 
 @Composable
 fun HelloScreen(
@@ -39,7 +39,7 @@ fun HelloScreen(
                     "Все указанные вами данные\n" +
                     "храняться на вашем устройстве\n" +
                     "локально и ни куда не передаются.",
-            color = White,
+            color = LWhite1,
             modifier = Modifier.padding(bottom = 16.dp), //Todo заменить
             fontSize = 24.sp,
             fontWeight = FontWeight.Bold,
